@@ -1,0 +1,58 @@
+.container {
+  width: 50%;
+ height: auto;
+  margin: auto;
+  color: white;
+  background: rgb(255, 56, 92);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.containerButton,
+.subButton,
+.quitButton {
+  border: 1px solid #fff;
+  height: 45px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.containerButton,
+.subButton,
+.quitButton {
+  transition: 0.2s ease-in-out;
+  &:hover {
+    color: hsl(272, 63%, 69%);
+  }
+}
+
+.containerButton {
+  width: 80%;
+  background: rgb(243, 156, 170);
+}
+
+.subButton {
+  width: 75%;
+  border-radius: 5px;
+  background: rgb(61, 65, 75);
+  border: 1px solid white;
+}
+
+.quitButton {
+  width: 50%;
+  background: rgb(255, 56, 92);
+  &:hover {
+    color: rgb(228, 152, 166)
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}

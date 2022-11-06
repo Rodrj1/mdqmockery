@@ -1,0 +1,82 @@
+.container {
+  width: 500px;
+  min-height: 150px;
+  margin: 20px 10px;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+
+  p {
+    font-weight: 500;
+    height: 75px;
+  }
+
+  h2,
+  p {
+    max-width: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 5px auto;
+  }
+  button {
+    height: 50px;
+    &:hover {
+      color: rgb(231, 133, 151);
+    }
+  }
+}
+
+.lightGreenBg,
+.pinkBg {
+  h2,
+  p {
+    color: white;
+  }
+  button {
+    color: white;
+    border: 1px solid white;
+  }
+}
+
+.pinkBg {
+  background: rgb(255, 56, 92);
+}
+
+.lightGreenBg {
+  background: #4fa095;
+}
+
+.lightGreyBg {
+  background: rgb(207, 207, 207);
+  h2,
+  p,
+  button {
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    p {
+      height: 120px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    h2, p {
+      width: 90%;
+      align-self: flex-start;
+    }
+    button {
+      width: 100%;
+      align-self: flex-end;;
+    }
+  }
+}
