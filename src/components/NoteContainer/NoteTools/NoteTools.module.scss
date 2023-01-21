@@ -1,0 +1,101 @@
+.container {
+  min-height: 300px;
+  width: 400px;
+  border: 5px solid rgb(255, 56, 92);
+  background: rgb(221, 87, 112);
+  color: white;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 150px;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  input,
+  textarea {
+    width: 80%;
+    background: transparent;
+    border: 2px solid #fff;
+  }
+
+  input {
+    height: 20px;
+  }
+
+  textarea {
+    min-height: 70px;
+    margin: 20px 0px;
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+
+  button {
+    color: white;
+    border: 2px solid white;
+    height: 50px;
+    width: auto;
+
+    &:hover {
+      color: rgb(231, 133, 151);
+    }
+    &:focus {
+      background: transparent;
+    }
+  }
+}
+
+.dropbtn {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background: rgb(221, 87, 112);
+    border: 2px solid rgb(255, 56, 92);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    button {
+      width: 90%;
+      height: 50px;
+    }
+  }
+
+  &:hover .dropdownContent {
+    display: block;
+  }
+
+  &:hover .dropbtn {
+    background: rgb(241, 192, 201);
+  }
+}
+
+.pinkBg {
+  background: rgb(255, 56, 92);
+}
+
+.lightGreenBg {
+  background: #4fa095;
+}
+
+.lightGreyBg {
+  background: rgb(207, 205, 205);
+}
+
+@media screen and (max-width: 712px) {
+  .container {
+    width: 90%;
+    min-height: 500px;
+    textarea {
+      height: 100px;
+    }
+  }
+}
